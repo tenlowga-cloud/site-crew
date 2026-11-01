@@ -1,0 +1,9 @@
+{
+  "name": "site-crew",
+  "version": "1.0.0",
+  "description": "Full questionnaire, then a 4-agent crew (front end, back end, copy, sales) builds a premium, animated, SEO and AI-search ready site in 3 passes max.",
+  "author": { "name": "Tyler", "url": "https://github.com/tenlowga-cloud" },
+  "repository": "https://github.com/tenlowga-cloud/site-crew-killaz",
+  "license": "MIT",
+  "keywords": ["website", "copywriting", "sales", "seo", "aeo", "animation", "agents"]
+}

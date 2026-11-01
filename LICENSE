@@ -1,0 +1,33 @@
+Site Crew: Proprietary License
+
+Copyright (c) 2026 Tyler (tenlowga-cloud). All rights reserved.
+
+The Site Crew playbook, loader, agents, server, scripts and documentation in
+this repository (everything except the third-party files listed below) are
+confidential and proprietary.
+
+A person may use Site Crew only while they hold a license key issued to them
+by the copyright holder, and only for as long as that key is active. A key is
+personal to the person it was issued to.
+
+Without the copyright holder's prior written permission, no one may:
+  1. copy, publish, share, sell, sublicense or otherwise distribute Site Crew
+     or any part of it, including files fetched from the license server;
+  2. share, transfer or publish a license key;
+  3. remove, alter or hide any license notice or watermark;
+  4. circumvent, disable or work around the license check;
+  5. reproduce the playbook's contents in another skill, prompt, product or
+     document, or use them to build a competing product.
+
+Every file served by the license server is marked to the licensee it was
+served to. The copyright holder may revoke any key at any time.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY ARISING FROM ITS USE.
+
+Third-party files keep their own licenses: Impeccable (plugins/impeccable/,
+vendor/impeccable-grok/, grok/.grok/skills/impeccable/,
+grok/.grok/agents/impeccable-*.md, grok/.grok/hooks/, dist/impeccable.skill)
+is Copyright Paul Bakaus, licensed under the Apache License 2.0. See
+THIRD_PARTY.md.

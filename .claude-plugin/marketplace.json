@@ -1,0 +1,44 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "site-crew",
+  "metadata": {
+    "description": "Site Crew (licensed loader) and Impeccable. Requires a personal key from the author."
+  },
+  "owner": {
+    "name": "Tyler",
+    "url": "https://github.com/tenlowga-cloud"
+  },
+  "plugins": [
+    {
+      "name": "site-crew",
+      "description": "Full questionnaire, then a 4-agent crew (front end, back end, copy, sales) builds a premium, animated, SEO and AI-search ready site in 3 passes max.",
+      "version": "1.0.0",
+      "source": "./plugins/site-crew",
+      "category": "design",
+      "tags": [
+        "website",
+        "landing-page",
+        "copywriting",
+        "sales",
+        "seo",
+        "aeo",
+        "animation",
+        "agents"
+      ]
+    },
+    {
+      "name": "impeccable",
+      "description": "Design fluency for frontend development by Paul Bakaus (Apache-2.0). Vendored copy of v4.5.2; site-crew's front-end seat and QA use it.",
+      "version": "4.5.2",
+      "source": "./plugins/impeccable",
+      "category": "design",
+      "homepage": "https://impeccable.style",
+      "tags": [
+        "design",
+        "frontend",
+        "ui",
+        "ux"
+      ]
+    }
+  ]
+}
