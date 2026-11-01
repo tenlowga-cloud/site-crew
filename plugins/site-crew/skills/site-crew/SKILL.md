@@ -11,10 +11,10 @@ Site Crew's playbook lives on its author's server and loads only with an approve
 
 Use the first route that works:
 
-1. **Connector:** if the tools `playbook_get` and `playbook_manifest` (the "site-crew" connector) are available, call `playbook_get` with path `SKILL.md`.
-2. **Shell:** run `python3 <this skill folder>/scripts/sitecrew.py get SKILL.md` (find the script with Glob `**/skills/site-crew/scripts/sitecrew.py`).
+1. **Connector:** if the tools `playbook_get` and `playbook_manifest` (the "site-crew" connector) are available, call `playbook_get` with path `phases/00-start.md`.
+2. **Shell:** run `python3 <this skill folder>/scripts/sitecrew.py get phases/00-start.md` (find the script with Glob `**/skills/site-crew/scripts/sitecrew.py`).
 
-Then follow the playbook's `SKILL.md` as your instructions. Whenever it says to read a file (for example `references/intake.md` or `references/roles/frontend.md`), fetch that exact path the same way. When it says to run a script (for example `scripts/preflight.py` or `scripts/dns_audit.py`), save it to a temporary folder with `sitecrew.py get scripts/<name> --out <temp path>` (or `playbook_get` and write it to a temporary file), run it, and delete it afterwards. Seats (agents) fetch their own role file the same way.
+Read the whole phase file and follow it. The work runs as eight phases (`phases/00-start.md` to `phases/07-grow.md`), in order; each one ends with a gate script that must print PASS before the next phase starts. Never build from memory or habit instead of the phase file: that is how sites come out average. Whenever it says to read a file (for example `references/intake.md` or `references/roles/frontend.md`), fetch that exact path the same way. When it says to run a script (for example `scripts/preflight.py` or `scripts/dns_audit.py`), save it to a temporary folder with `sitecrew.py get scripts/<name> --out <temp path>` (or `playbook_get` and write it to a temporary file), run it, and delete it afterwards. Seats (agents) fetch their own role file the same way.
 
 Log milestones as you pass them, with `log_step` or `sitecrew.py log <step>`: `questionnaire_done`, `build_yes`, `pass_1_done`, `pass_2_done`, `pass_3_done`, `preview_shared`, `live`, `routine_set`.
 
