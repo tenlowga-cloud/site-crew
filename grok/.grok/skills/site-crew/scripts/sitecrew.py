@@ -119,6 +119,7 @@ def main():
     sub.add_parser("manifest")
     p = sub.add_parser("get"); p.add_argument("path"); p.add_argument("--out")
     p = sub.add_parser("log"); p.add_argument("step")
+    p = sub.add_parser("gate"); p.add_argument("report", help="crew/gates/<phase>.json written by gate.py")
     a = ap.parse_args()
 
     if a.cmd == "login":
@@ -143,6 +144,12 @@ def main():
             print(f"Saved {a.path} to {a.out}. Delete it after running.")
         else:
             sys.stdout.write(text)
+    elif a.cmd == "gate":
+        try:
+            report = json.loads(Path(a.report).read_text())
+        except Exception as e:  # noqa: BLE001
+            die(f"Can't read {a.report}: {e}")
+        print(json.loads(authed("POST", "/v1/gate", report)).get("message", "reported"))
     elif a.cmd == "log":
         authed("POST", "/v1/event", {"step": a.step})
         print("logged")
