@@ -23,7 +23,7 @@ import urllib.request
 import uuid
 from pathlib import Path
 
-SERVER = os.environ.get("SITE_CREW_SERVER", "https://site-crew-license.teg27-build-suite.workers.dev").rstrip("/")
+SERVER = os.environ.get("SITE_CREW_SERVER", "https://site-crew-license.tyler-miletracker.workers.dev").rstrip("/")
 CONTACT = "the author (github.com/tenlowga-cloud)"
 HOME = Path.home() / ".site-crew"
 KEY_FILE, SESSION_FILE, MACHINE_FILE = HOME / "license", HOME / "session.json", HOME / "machine"
